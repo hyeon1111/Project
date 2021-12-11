@@ -128,20 +128,6 @@
             <div id="mypage_title">
                 <h2>나의 로드맵</h2>
             </div>
- <!--            
- 			<div id="mypage_img1">
-                <a href="#"><img src="../images/mypage.jpg" alt="마이페이지 이미지"></a>
-                <div id="sub_hover">
-                    <a href="../mypage/my_info.html"><p>내 정보 관리</p></a>
-                    <a href=""><p>크루 관리</p></a>
-                    <a href="../roadmap/my_roadmap.html"><p>로드맵 관리</p></a>
-                    <a href="../myboard/myboard.html"><p>게시물 관리</p></a>
-                </div>          
-            </div>
-            <div id="mypage_img2">
-                <a href="../mypage/mypage.html"><img id="img_hover" src="../images/home.png" alt="홈 이미지"></a>
-            </div> 
--->
         </div>
         <hr>
 
@@ -162,7 +148,6 @@
             </div> 
             
             <div class="roadmap_list">          
-  	      	<%-- <c:if test="${session_no == 4}">      --%>
 				<c:forEach items="${list}" var="roadmapCateSubVo">
 					<a href="roadmap_detail?u_no=${roadmapCateSubVo.roadmapVo.u_no}&cate_sub_no=${roadmapCateSubVo.categorySubVo.cate_sub_no}&r_no=${roadmapCateSubVo.roadmapVo.r_no}&r_name=${roadmapCateSubVo.roadmapVo.r_name}">
 						<%--  &cate_sub_name=${roadmapCateSubVo.categorySubVo.cate_sub_name} --%>
@@ -177,7 +162,6 @@
 						</div>
 					</a>
 				</c:forEach>
-				<%-- 	</c:if>    --%>      
             </div>
         </div>
             
